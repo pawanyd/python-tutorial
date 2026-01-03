@@ -1,0 +1,25 @@
+1. import the data 
+2. clean the data 
+3. split the data into training / data set 
+4. create a model
+5. Train a model
+6. make a predection 
+8. Evaluate and improve
+
+
+Libraries and Tools 
+1. numpy
+2. Pandas
+3. MatplotLib
+4. Scikit-learn
+
+=====> 
+Jypyter => Anaconda
+
+kaggle => data set
+
+bit.ly/music-csv
+
+jupyter notebook => command
+
+Link => https://www.youtube.com/watch?v=_uQrJ0TkZlc&list=PLTjRvDozrdlxj5wgH4qkvwSOdHLOCx10f
