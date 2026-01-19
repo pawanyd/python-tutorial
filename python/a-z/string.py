@@ -26,7 +26,7 @@ print(sendMail)
 
 # if we want to get the first character then we can get it via useing index
 
-name = "pawan";
+name = "pawan"
 
 print(name[0])
 
