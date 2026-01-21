@@ -92,13 +92,32 @@ class Solution:
 
         self.memo[n] = self.climbStairs(n-1) + self.climbStairs(n - 2)
         return self.memo[n]
+    
+
+    def numDecodings(self, s: str) -> int:
+        n = len(s)
+        dp = {}
+        def dstring(remStr):
+            if remStr == '': return 1
+            if remStr == '0': return 0
+            if remStr in dp: return dp[remStr]
+            oneDigit = remStr[n-1:]
+            twoDigit = remStr[n-2:]
+            ans = 0
+            if oneDigit != 0:
+                ans += dstring(remStr[1:])
+            
+            if twoDigit >= 10 and twoDigit <= 26:
+                ans += dstring(remStr[2:])
+            
+            dp[remStr] = ans
+
+            return ans
+        
+        return dstring(s)
 
     
 sol = Solution()
 # sol.sortArray([5,1,1,2,0,0])
 # sol.letterCombinations("23")
-sol.climbStairs(4)
-
-
-        
-        
+sol.numDecodings("12")
